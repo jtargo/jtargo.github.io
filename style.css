@@ -160,6 +160,8 @@ ul li:last-child {
 @media (max-width: 1130px){
  .container {
   margin: 0 40px;
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
  }
  ul li {
   margin-right: 6%;
@@ -181,12 +183,6 @@ ul li:last-child {
 
 /*Mobile*/
 @media (max-width: 600px){
-  .container {
-    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
-    margin: 0 auto;
-    max-width: 30%;
-  }
   h1 {
     top: 60px;
   }
