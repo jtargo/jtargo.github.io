@@ -119,6 +119,7 @@ footer {
 
 a {
     text-decoration: none;
+    display: inline-block;
     color: #fff;
     transition: 0.2s -webkit-transform;
     transition: 0.2s transform;
