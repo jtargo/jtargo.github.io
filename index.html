@@ -58,9 +58,9 @@
         float distortionEffect = distanceStrength * waveSinusoid * uMouseMoveStrength;
 
         // apply it to our vertex position
-        vertexPosition.z +=  distortionEffect / 7.0;
-        vertexPosition.x +=  (distortionEffect / 7.0 * (uResolution.x / uResolution.y) * (uMousePosition.x - vertexPosition.x));
-        vertexPosition.y +=  distortionEffect / 7.0 * (uMousePosition.y - vertexPosition.y);
+        vertexPosition.z +=  distortionEffect / 50.0;
+        vertexPosition.x +=  (distortionEffect / 50.0 * (uResolution.x / uResolution.y) * (uMousePosition.x - vertexPosition.x));
+        vertexPosition.y +=  distortionEffect / 50.0 * (uMousePosition.y - vertexPosition.y);
 
           gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
 
