@@ -74,7 +74,8 @@ body {
     font-family: 'Config', sans-serif;
     text-transform: uppercase;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
+    background: #eee;
 }
 
 .container {
@@ -87,7 +88,9 @@ body {
 
 h1 {
   position: absolute;
-  top: 60px;
+  top: 120px;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 /*Main Content*/
@@ -113,14 +116,14 @@ p {
 
 footer {
   position: absolute;
-  bottom: 60px;
+  bottom: 100px;
   width: 100%;
 }
 
 a {
     text-decoration: none;
     display: inline-block;
-    color: #fff;
+    color: #000000;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -128,6 +131,7 @@ a {
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
+    padding: 20px;
 }
 
 a:hover {
@@ -138,25 +142,27 @@ a:hover {
 ul {
     list-style: none;
     width: 100%;
+    margin-left: -20px;
 }
 
 ul li {
-  float: left;
-  width: 20%;
-  padding: 0;
-  margin: 0;
+  display: inline-block;
+  margin-right: 8%;
   pointer-events: auto;
 }
 
-ul li:first-child {
-  width: 39%;
+ul li:last-child {
+  margin-right: 0%;
 }
 
 
 /*Tablet*/
-@media (max-width: 1100px){
+@media (max-width: 1130px){
  .container {
   margin: 0 40px;
+ }
+ ul li {
+  margin-right: 6%;
  }
 }
 
@@ -171,16 +177,45 @@ ul li:first-child {
     width: 100%;
     line-height: 1.6;
   }
-
-  ul li:first-child {
-    width: 100%;
-  }
 }
 
 /*Mobile*/
-@media (max-width: 500px){
-
+@media (max-width: 600px){
+  h1 {
+    top: 60px;
+  }
   p {
     font-size: 40px;
+  }
+  footer {
+    bottom: 40px;
+  }
+  ul {
+    margin-left: -10px;
+  }
+  a {
+    padding: 10px;
+  }
+}
+
+
+/*Small Height*/
+@media (max-height: 712px){
+  .container {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+  h1 {
+    position: static;
+  }
+  .content {
+    position: static;
+    margin: 50px 0;
+    top: none;
+    transform: none;
+  }
+  footer {
+    position: static;
   }
 }
