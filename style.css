@@ -1,0 +1,132 @@
+/*Global Elemnents*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Config';
+    src: url('fonts/ConfigAlt-Bold.woff2') format('woff2'),
+        url('fonts/ConfigAlt-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Config';
+    src: url('fonts/ConfigAlt-Black.woff2') format('woff2'),
+        url('fonts/ConfigAlt-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+
+}
+body {
+    background-image: url('./jt.jpg');
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Config', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+}
+
+.container {
+  position: relative;
+  margin: 0 120px;
+  height: 100%;
+}
+
+h1 {
+  position: absolute;
+  top: 60px;
+}
+
+/*Main Content*/
+
+.content {
+  max-width: 640px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content p:first-child {
+  margin-bottom: 68px;
+}
+
+p {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: .9;
+}
+
+/*Footer */
+
+footer {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+ul li {
+  float: left;
+  width: 20%;
+  padding: 0;
+  margin: 0;
+}
+
+ul li:first-child {
+  width: 39%;
+}
+
+
+/*Tablet*/
+@media (max-width: 1100px){
+ .container {
+  margin: 0 40px;
+ }
+}
+
+@media (max-width: 900px){
+
+  p {
+    font-size: 70px;
+  }
+
+  footer ul li {
+    float: none;
+    width: 100%;
+    line-height: 1.6;
+  }
+  
+  ul li:first-child {
+    width: 100%;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 500px){
+
+  p {
+    font-size: 40px;
+  }
+}
