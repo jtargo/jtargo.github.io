@@ -11,6 +11,7 @@
 #canvas {
     height: 100vh;
     width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .curtain {
@@ -169,7 +170,9 @@ ul li:last-child {
 }
 
 @media (max-width: 900px){
-
+  .content {
+    top: 40%;
+  }
   p {
     font-size: 70px;
   }
